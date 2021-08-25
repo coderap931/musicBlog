@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link ref="text/css" rel="stylesheet" href="style.css">
+    <title>Music Blog</title>
+    <!-- 
+        Holds Metadata / information we don't see.
+            - links, viewport info, document title, etc.
+     -->
+</head>
+<body>
+    
+    <header>
+        <h1>Music Blog</h1>
+
+        <nav>
+            <ul>
+                <!-- "(li>span{Home})+(li>a)*3" - this generates the below code -->
+                <li><span>Home</span></li>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome</h2>
+
+        <!-- Main specifies the main content.
+        There can only be one!
+        Cannot be a descendant (child) of:
+            - header, nav, article, aside, footer -->
+        <main>
+            <article>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Inventore animi quia nulla suscipit necessitatibus modi harum explicabo! 
+                    Iusto, nihil veniam at, autem non totam incidunt tenetur aspernatur aperiam placeat perferendis.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquam qui quam. Recusandae laudantium cupiditate, consequuntur mollitia dolores cum! Architecto natus sapiente fugiat perferendis ut assumenda dicta blanditiis officiis eligendi.
+                </p>
+            </article>
+
+            <aside>
+               <h2>Favorite Albums</h2>
+               <!-- (a>img)*4 -->
+               <a target="blank" href="./assets/AllKillerNoFiller.jpg"><img src="./assets/AllKillerNoFiller.jpg" alt="All Killer No Fill - Sum 41 (Album Cover)"></a>
+               <a target="blank" href="./assets/FearInoculum.jpg"><img src="./assets/FearInoculum.jpg" alt="Fear Inoculum - TOOL (Album Cover)"></a>
+               <a target="blank" href="./assets/MovingPictures.jpg"><img src="./assets/MovingPictures.jpg" alt="Moving Pictures - Rush (Album Cover)"></a>
+               <a target="blank" href="./assets/Thread.jpg"><img src="./assets/Thread.jpg" alt="Thread - Red Sun Rising (Album Cover)"></a>
+            </aside>
+        </main>
+    </section>
+    <!-- Footers can contain:
+        -authorship info, copyright, contact info, sitemap, related links, back to top link -->
+    <footer>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni veniam sed eaque doloremque voluptatibus pariatur natus quos, eum porro eius, 2021 by Adam
+        </p>
+    </footer>
+</body>
+</html>
